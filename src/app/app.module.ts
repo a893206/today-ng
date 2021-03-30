@@ -14,6 +14,8 @@ import { SetupComponent } from './pages/setup/setup.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { MainComponent } from './pages/main/main.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { LeftControlComponent } from './pages/main/left-control/left-control.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 registerLocaleData(zh);
 
@@ -21,7 +23,8 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     SetupComponent,
-    MainComponent
+    MainComponent,
+    LeftControlComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     NzButtonModule,
-    NzLayoutModule
+    NzLayoutModule,
+    NzIconModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
